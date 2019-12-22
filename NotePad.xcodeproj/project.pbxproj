@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		1825C28823AECAEF00033183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C28723AECAEF00033183 /* AppDelegate.swift */; };
 		1825C28A23AECAEF00033183 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C28923AECAEF00033183 /* SceneDelegate.swift */; };
-		1825C28C23AECAEF00033183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C28B23AECAEF00033183 /* ViewController.swift */; };
 		1825C28F23AECAEF00033183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825C28D23AECAEF00033183 /* Main.storyboard */; };
 		1825C29223AECAEF00033183 /* NotePad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1825C29023AECAEF00033183 /* NotePad.xcdatamodeld */; };
 		1825C29423AECAF000033183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1825C29323AECAF000033183 /* Assets.xcassets */; };
 		1825C29723AECAF000033183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825C29523AECAF000033183 /* LaunchScreen.storyboard */; };
 		1825C2A223AECAF000033183 /* NotePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2A123AECAF000033183 /* NotePadTests.swift */; };
 		1825C2AD23AECAF000033183 /* NotePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2AC23AECAF000033183 /* NotePadUITests.swift */; };
+		1825C2BB23AECB3100033183 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2BA23AECB3100033183 /* NotesListViewController.swift */; };
+		1825C2BD23AECD8A00033183 /* NotesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2BC23AECD8A00033183 /* NotesListTableViewCell.swift */; };
+		1825C2BF23AED09D00033183 /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2BE23AED09D00033183 /* DisplayNoteViewController.swift */; };
+		1825C2C323AEEB0600033183 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C2C223AEEB0600033183 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		1825C28423AECAEF00033183 /* NotePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1825C28723AECAEF00033183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1825C28923AECAEF00033183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1825C28B23AECAEF00033183 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1825C28E23AECAEF00033183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1825C29123AECAEF00033183 /* NotePad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotePad.xcdatamodel; sourceTree = "<group>"; };
 		1825C29323AECAF000033183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		1825C2A823AECAF000033183 /* NotePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1825C2AC23AECAF000033183 /* NotePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadUITests.swift; sourceTree = "<group>"; };
 		1825C2AE23AECAF000033183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825C2BA23AECB3100033183 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = SOURCE_ROOT; };
+		1825C2BC23AECD8A00033183 /* NotesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListTableViewCell.swift; sourceTree = "<group>"; };
+		1825C2BE23AED09D00033183 /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
+		1825C2C223AEEB0600033183 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,11 @@
 			children = (
 				1825C28723AECAEF00033183 /* AppDelegate.swift */,
 				1825C28923AECAEF00033183 /* SceneDelegate.swift */,
-				1825C28B23AECAEF00033183 /* ViewController.swift */,
 				1825C28D23AECAEF00033183 /* Main.storyboard */,
+				1825C2BE23AED09D00033183 /* DisplayNoteViewController.swift */,
+				1825C2BC23AECD8A00033183 /* NotesListTableViewCell.swift */,
+				1825C2BA23AECB3100033183 /* NotesListViewController.swift */,
+				1825C2C223AEEB0600033183 /* CoreDataHelper.swift */,
 				1825C29323AECAF000033183 /* Assets.xcassets */,
 				1825C29523AECAF000033183 /* LaunchScreen.storyboard */,
 				1825C29823AECAF000033183 /* Info.plist */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1825C28C23AECAEF00033183 /* ViewController.swift in Sources */,
+				1825C2BB23AECB3100033183 /* NotesListViewController.swift in Sources */,
 				1825C28823AECAEF00033183 /* AppDelegate.swift in Sources */,
 				1825C28A23AECAEF00033183 /* SceneDelegate.swift in Sources */,
+				1825C2C323AEEB0600033183 /* CoreDataHelper.swift in Sources */,
+				1825C2BF23AED09D00033183 /* DisplayNoteViewController.swift in Sources */,
+				1825C2BD23AECD8A00033183 /* NotesListTableViewCell.swift in Sources */,
 				1825C29223AECAEF00033183 /* NotePad.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
